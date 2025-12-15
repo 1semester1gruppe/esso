@@ -1,4 +1,148 @@
 html {
   font-family: "Inter", sans-serif;
   background-color: #fefaf1;
+  color: #1a1a1a;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* HERO  */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+.hero-logo {
+  position: absolute;
+  top: -30px;
+  margin-left: 10px;
+  width: 120px;
+  transform: none;
+}
+
+/* BURGER MENU */
+.nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+}
+
+/* BURGER IKON */
+.burger {
+  width: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 2px;
+  width: 100%;
+  background: #1a1a1a;
+  display: block;
+}
+
+/* MENU  */
+.nav ul {
+  position: absolute;
+  top: 48px;
+  right: 0;
+  align-items: flex-end;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+
+/* BURGERMENU ÅBEN */
+.nav.open ul {
+  display: flex;
+}
+
+/* LINKS */
+.nav ul li a {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+/* Hover */
+.nav ul li a:hover {
+  opacity: 0.6;
+}
+
+/* FOOTER */
+.footer {
+  font-size: 0.7rem;
+  background: #f2ecdf;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px 10vw;
+}
+.footer a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+  /* HERO */
+  .hero {
+    height: 850px;
+  }
+
+  .hero-logo {
+    top: -30px;
+    left: -20px;
+  }
+
+  /* NAV */
+  .burger {
+    display: none;
+  }
+
+  .nav ul {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    background: none;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  /* FOOTER */
+  .footer {
+    gap: 40px;
+    padding: 60px 10vw;
+    font-size: 13px;
+  }
+
+  .footer h4 {
+    font-size: 13px;
+  }
 }
