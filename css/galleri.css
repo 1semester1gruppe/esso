@@ -20,3 +20,13 @@ h1 {
 p {
   display: none;
 }
+@media (min-width: 700px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 2rem;
+  }
+  p {
+    display: block;
+  }
+}
