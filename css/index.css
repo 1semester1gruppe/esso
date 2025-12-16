@@ -6,6 +6,11 @@
   width: 180px;
   transform: translate(-50%, -50%);
 }
+.hero-bg {
+  object-fit: cover;
+  object-position: center center;
+  height: 100vh;
+}
 
 /*CARDS*/
 .cards {
@@ -61,6 +66,11 @@
 
   .hero-logo {
     width: 420px;
+  }
+
+  .hero-bg {
+    object-fit: cover;
+    object-position: center 40%;
   }
   /* CARDS */
   .cards {
