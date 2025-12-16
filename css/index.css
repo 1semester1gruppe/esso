@@ -1,0 +1,44 @@
+/*CARDS*/
+.cards {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.card {
+  text-align: center;
+}
+
+.card img {
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+/* CTA */
+.cta {
+  padding: 6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box {
+  border: 1px solid #1a1a1a;
+  padding: 3rem 4rem;
+  text-align: center;
+}
+
+.cta-box h2 {
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.cta-box span {
+  font-size: 14px;
+  letter-spacing: 0.25em;
+}
