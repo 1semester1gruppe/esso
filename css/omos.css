@@ -1,0 +1,26 @@
+.grid_1-1 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.grid_1-1 {
+  display: grid;
+  padding: 20px;
+}
+
+.grid_1-1 h2,
+.grid_1-1 p {
+  text-align: center;
+}
+
+.grid_1-1 h2 {
+  padding-top: 20px;
+}
+
+.grid_1-1 p {
+  text-align: justify;
+  line-height: 1.5;
+  padding: 0 20px;
+}
