@@ -24,3 +24,51 @@
   line-height: 1.5;
   padding: 0 20px;
 }
+
+@media (min-width: 1024px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 1300px;
+    margin: 50px auto;
+    padding: 20px;
+  }
+
+  .grid_1-1 img {
+    width: 90%;
+  }
+
+  .text1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    padding-left: 60px;
+  }
+
+  .text2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    padding-left: 60px;
+  }
+
+  .grid_1-1 h2 {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+
+  .grid_1-1 p {
+    padding: 0;
+    text-align: left;
+  }
+
+  .grid_1-1:nth-child(even) .owners,
+  .grid_1-1:nth-child(even) .history,
+  .grid_1-1:nth-child(even) .bakery,
+  .grid_1-1:nth-child(even) .wineandbeer {
+    order: 2;
+  }
+}
