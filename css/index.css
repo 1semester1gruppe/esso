@@ -51,3 +51,40 @@
   font-size: 14px;
   letter-spacing: 0.25em;
 }
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+  /* HERO */
+  .hero {
+    height: 850px;
+  }
+
+  .hero-logo {
+    width: 420px;
+  }
+  /* CARDS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 90px;
+    justify-content: center;
+    padding: 80px 10vw;
+  }
+
+  .card img {
+    height: 375px;
+    object-fit: cover;
+  }
+
+  /* CTA */
+  .cta {
+    padding: 100px 0;
+  }
+
+  .cta-box {
+    width: 260px;
+    height: 360px;
+    background: #5b4638;
+    color: #fff;
+  }
+}
