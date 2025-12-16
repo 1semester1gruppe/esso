@@ -16,23 +16,28 @@
 }
 
 .grid_1-1 h2 {
-  padding-top: 20px;
+  padding: 30px 20px 20px 20px;
 }
 
 .grid_1-1 p {
   text-align: justify;
-  line-height: 1.5;
-  padding: 0 20px;
+  line-height: 1.4;
+  padding: 0 5px;
 }
 
 @media (min-width: 1024px) {
+  main {
+    margin-left: 70px;
+    margin-right: 10px;
+  }
+
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     max-width: 1300px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 10px;
   }
 
   .grid_1-1 img {
@@ -58,6 +63,7 @@
   .grid_1-1 h2 {
     margin-bottom: 20px;
     text-align: left;
+    padding: 0;
   }
 
   .grid_1-1 p {
