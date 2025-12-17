@@ -29,4 +29,14 @@ p {
   p {
     display: block;
   }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column p {
+    margin-top: auto;
+    font-size: smaller;
+  }
 }
