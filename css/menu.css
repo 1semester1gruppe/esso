@@ -1,5 +1,5 @@
 :root {
-  --bg: #fbf6ee;
+  --bg: #fefaf1;
   --text: #222;
   --muted: #8a8a8a;
   --line: #cfc7bb;
@@ -13,7 +13,6 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .sheet {
