@@ -111,9 +111,6 @@ img {
 /* ---------- DESKTOP ---------- */
 @media (min-width: 1024px) {
   /* HERO */
-  .hero {
-    height: 850px;
-  }
 
   .hero-logo {
     top: -30px;
