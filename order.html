@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/generel.css" />
+    <link rel="stylesheet" href="css/order.css" />
+  </head>
+  <body>
+    <header class="headerbar">
+      <a href="index.html" class="logo-link">
+        <img src="images/esso_logo.svg" alt="ESSO logo" class="hero-logo" />
+      </a>
+
+      <nav class="nav">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="form-side">
+        <h1 class="title">ORDER WITH US</h1>
+        <!-- BILLEDE FØRST -->
+        <aside class="image">
+          <img src="images/order.webp" alt="img" />
+        </aside>
+
+        <form class="form" action="#" method="post">
+          <div class="group">
+            <div class="field-head">
+              <span class="label lg">Name</span>
+              <span class="req">required*</span>
+            </div>
+
+            <div class="name-grid">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input id="firstName" type="text" required />
+              </div>
+
+              <div class="field">
+                <label for="surname">Surname</label>
+                <input id="surname" type="text" required />
+              </div>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="email">Email <span class="req">required*</span></label>
+            <input id="email" type="email" required />
+          </div>
+
+          <div class="field">
+            <label for="telephone"
+              >Telephone <span class="req">required*</span></label
+            >
+            <input id="telephone" type="tel" required />
+          </div>
+
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" type="text" />
+          </div>
+
+          <div class="field">
+            <label for="message"
+              >Your message <span class="req">required*</span></label
+            >
+            <textarea id="message" rows="4" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <h4>INFO</h4>
+        <p>
+          <a href="about.html">About</a><br />
+          <a href="events.html">Events</a><br />
+          <a href="menu.html">Menu</a>
+        </p>
+      </div>
+
+      <div>
+        <h4>OPENING HOURS</h4>
+        <p>Tue - Sat<br />09:00 - 17:00</p>
+      </div>
+
+      <div>
+        <h4>CONNECT</h4>
+        <a
+          href="https://www.instagram.com/esso_cph"
+          target="_blank"
+          rel="noopener"
+        >
+          @esso_cph
+        </a>
+      </div>
+
+      <div>
+        <h4>LOCATION</h4>
+        <p>Vigerslev allé 35, 2500, Valby</p>
+      </div>
+    </footer>
+    <div id="popup-overlay" class="popup_overlay" hidden>
+      <div
+        class="popup_box"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="popup-title"
+      >
+        <button id="popup-close" class="popup_close" aria-label="Luk">×</button>
+
+        <div class="invite_card">
+          <h2 id="popup-title" class="invite_title"></h2>
+          <p id="popup-date" class="invite_date"></p>
+
+          <h3 class="invite_big">YOU’RE INVITED</h3>
+
+          <p id="popup-body" class="invite_body"></p>
+
+          <p class="invite_meta">
+            <span class="k">WHEN:</span> <span id="popup-when"></span>
+          </p>
+          <p class="invite_meta">
+            <span class="k">WHERE:</span> <span id="popup-where"></span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
