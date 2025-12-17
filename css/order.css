@@ -1,0 +1,146 @@
+.wrap {
+  padding: 0 16px;
+  padding-bottom: 120px;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.image img {
+  width: calc(100vw - 62px);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== TITLE ===== */
+.title {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1;
+  margin-top: 95px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+/* ===== FORM ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+/* Label + required */
+.field-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Inputs */
+.field input,
+.field textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  background: transparent;
+  padding: 10px 0;
+  outline: none;
+}
+
+/* Name fields (First / Surname) */
+.name-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.req {
+  color: #6e6e6e;
+  font-size: 0.85em;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+/* Button */
+.btn {
+  margin-top: 40px;
+  width: 182px;
+  height: 51px;
+
+  background: #000;
+  color: #fff;
+  border: none;
+
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .wrap {
+    max-width: 1515px;
+    margin: 0 auto;
+    padding: 0 56px;
+    padding-bottom: 120px;
+  }
+
+  .form-side {
+    display: grid;
+    grid-template-columns: 1fr 656px;
+    column-gap: 78px;
+    align-items: start;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 90px;
+    margin-bottom: 55px;
+    max-width: 513px;
+  }
+
+  .image {
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    justify-self: end;
+    margin-top: 90px;
+    margin-bottom: 0;
+  }
+
+  .image img {
+    width: 656px;
+    height: 780px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .form {
+    max-width: 677px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+  }
+
+  .field input,
+  .field textarea {
+    width: 100%;
+    resize: vertical;
+    max-width: 100%;
+  }
+
+  .name-grid {
+    gap: 44px;
+  }
+
+  .btn {
+    width: 224px;
+    height: 71px;
+    margin-top: 26px;
+  }
+}
