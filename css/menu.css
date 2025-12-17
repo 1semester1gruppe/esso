@@ -1,0 +1,99 @@
+:root {
+  --bg: #fbf6ee;
+  --text: #222;
+  --muted: #8a8a8a;
+  --line: #cfc7bb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.sheet {
+  width: min(92vw, 560px);
+  margin: 20px auto 32px;
+  padding: 24px 20px 36px;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 28px;
+}
+
+.rule {
+  height: 1px;
+  background: var(--line);
+  width: 90%;
+  margin: 14px auto 22px;
+}
+
+h2 {
+  margin: 22px 0 10px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 16px;
+  margin: 7px 0;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.price {
+  white-space: nowrap;
+}
+
+.note-wrap {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.note {
+  font-size: 10px;
+  color: var(--muted);
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .sheet {
+    width: min(90vw, 860px);
+    margin: 40px auto;
+    padding: 40px 36px 56px;
+  }
+
+  .rule {
+    width: 78%;
+  }
+
+  .two-col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 48px;
+  }
+}
