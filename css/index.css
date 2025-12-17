@@ -1,0 +1,181 @@
+/*LOGO OG BG BILLEDE*/
+.hero-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  transform: translate(-50%, -50%);
+}
+.hero-bg {
+  object-fit: cover;
+  object-position: center center;
+  height: 100vh;
+}
+
+.nav ul li a {
+  color: #fefaf1;
+}
+
+.nav .burger span {
+  background-color: #fefaf1;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #fefaf1;
+  font-size: 10px;
+}
+
+/*CARDS*/
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  width: 350px;
+
+  margin: 0 auto;
+}
+
+.card {
+  text-align: center;
+  width: 100%;
+}
+
+.image-wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* billede altid lidt mørkt */
+.image-wrapper img {
+  width: 100%;
+  display: block;
+  filter: brightness(0.6);
+}
+
+/* tekst ALTID synlig */
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 20px;
+
+  letter-spacing: 0.15em;
+
+  opacity: 1;
+}
+
+/* CTA */
+.cta {
+  padding: 6rem 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-box h2 {
+  font-size: 32px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5rem;
+}
+
+.cta-box span {
+  font-size: 14px;
+  display: block;
+  gap: 5px;
+  padding: 10px;
+}
+
+.cta {
+  padding: 100px 0;
+  align-items: center;
+}
+
+.cta-box {
+  width: 260px;
+  height: 360px;
+  background: #4b372d;
+  color: #fff;
+  padding: 3rem 4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logomenu {
+  width: 120px;
+  margin-left: 10px;
+  padding-top: 30px;
+  display: block;
+}
+
+/* ---------- DESKTOP ---------- */
+@media (min-width: 1024px) {
+  /* HERO */
+  .hero {
+    height: 850px;
+  }
+
+  .hero-logo {
+    width: 350px;
+  }
+
+  .hero-bg {
+    object-fit: cover;
+    object-position: center 40%;
+  }
+  .hero-bottom {
+    font-size: 14px;
+  }
+  /* CARDS */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 90px;
+    justify-content: center;
+    padding: 80px 10vw;
+  }
+
+  .card img {
+    height: 375px;
+    object-fit: cover;
+  }
+
+  .image-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .image-wrapper img {
+    filter: none;
+    transition: filter 0.3s ease;
+  }
+
+  .overlay-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: 1000;
+  }
+
+  .image-wrapper:hover img {
+    filter: blur(2px) brightness(0.6);
+  }
+
+  .image-wrapper:hover .overlay-text {
+    opacity: 0.7;
+  }
+}
