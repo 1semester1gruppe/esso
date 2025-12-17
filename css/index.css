@@ -1,4 +1,4 @@
-/*LOGO*/
+/*LOGO OG BG BILLEDE*/
 .hero-logo {
   position: absolute;
   top: 50%;
@@ -12,6 +12,22 @@
   height: 100vh;
 }
 
+.nav ul li a {
+  color: #fefaf1;
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+  color: #fefaf1;
+  font-size: 14px;
+}
+
 /*CARDS*/
 .cards {
   display: flex;
@@ -22,7 +38,7 @@
 
 .card {
   text-align: center;
-  width: 300px; /* vigtigt – giver stabil hover */
+  width: 300px;
 }
 
 .image-wrapper {
@@ -96,7 +112,7 @@
   }
 
   .hero-logo {
-    width: 420px;
+    width: 750px;
   }
 
   .hero-bg {
