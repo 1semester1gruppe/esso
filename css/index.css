@@ -11,7 +11,9 @@
   object-position: center center;
   height: 100vh;
 }
-
+.hero {
+  height: 100vh;
+}
 .nav ul li a {
   color: #fefaf1;
 }
