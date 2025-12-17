@@ -1,0 +1,42 @@
+img {
+  width: 100%;
+  display: block;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+h1 {
+  text-align: center;
+}
+p {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin: 2rem;
+  }
+  p {
+    display: block;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column p {
+    margin-top: auto;
+    font-size: smaller;
+  }
+}
