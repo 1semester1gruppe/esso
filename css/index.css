@@ -3,7 +3,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 180px;
+  width: 280px;
   transform: translate(-50%, -50%);
 }
 .hero-bg {
@@ -16,6 +16,10 @@
   color: #fefaf1;
 }
 
+.nav .burger span {
+  background-color: #fefaf1;
+}
+
 .hero-bottom {
   position: absolute;
   bottom: 1rem;
@@ -25,20 +29,23 @@
   justify-content: space-between;
   padding: 0 2rem;
   color: #fefaf1;
-  font-size: 14px;
+  font-size: 10px;
 }
 
 /*CARDS*/
 .cards {
   display: flex;
-  gap: 4rem;
-  justify-content: center;
-  padding: 4rem 1.5rem;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  width: 350px;
+
+  margin: 0 auto;
 }
 
 .card {
   text-align: center;
-  width: 300px;
+  width: 100%;
 }
 
 .image-wrapper {
@@ -48,17 +55,14 @@
   cursor: pointer;
 }
 
+/* billede altid lidt mørkt */
 .image-wrapper img {
   width: 100%;
-  height: auto;
   display: block;
-  transition: filter 0.3s ease;
+  filter: brightness(0.6);
 }
 
-.image-wrapper:hover img {
-  filter: blur(2px) brightness(0.6);
-}
-
+/* tekst ALTID synlig */
 .overlay-text {
   position: absolute;
   inset: 0;
@@ -67,17 +71,11 @@
   justify-content: center;
 
   color: white;
-  opacity: 0;
-  font-size: 24px;
-  font-weight: 1000;
+  font-size: 20px;
+
   letter-spacing: 0.15em;
 
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.image-wrapper:hover .overlay-text {
-  opacity: 70%;
+  opacity: 1;
 }
 
 /* CTA */
@@ -85,12 +83,6 @@
   padding: 6rem 1.5rem;
   display: flex;
   justify-content: center;
-}
-
-.cta-box {
-  border: 1px solid #1a1a1a;
-  padding: 3rem 4rem;
-  text-align: center;
 }
 
 .cta-box h2 {
@@ -101,7 +93,32 @@
 
 .cta-box span {
   font-size: 14px;
-  letter-spacing: 0.25em;
+  display: block;
+  gap: 5px;
+  padding: 10px;
+}
+
+.cta {
+  padding: 100px 0;
+  align-items: center;
+}
+
+.cta-box {
+  width: 260px;
+  height: 360px;
+  background: #4b372d;
+  color: #fff;
+  padding: 3rem 4rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* LOGO */
+.logomenu {
+  width: 120px;
+  margin-left: 10px;
+  padding-top: 30px;
+  display: block;
 }
 
 /* ---------- DESKTOP ---------- */
@@ -112,12 +129,15 @@
   }
 
   .hero-logo {
-    width: 750px;
+    width: 350px;
   }
 
   .hero-bg {
     object-fit: cover;
     object-position: center 40%;
+  }
+  .hero-bottom {
+    font-size: 14px;
   }
   /* CARDS */
   .cards {
@@ -133,15 +153,29 @@
     object-fit: cover;
   }
 
-  /* CTA */
-  .cta {
-    padding: 100px 0;
+  .image-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    cursor: pointer;
   }
 
-  .cta-box {
-    width: 260px;
-    height: 360px;
-    background: #5b4638;
-    color: #fff;
+  .image-wrapper img {
+    filter: none;
+    transition: filter 0.3s ease;
+  }
+
+  .overlay-text {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-weight: 1000;
+  }
+
+  .image-wrapper:hover img {
+    filter: blur(2px) brightness(0.6);
+  }
+
+  .image-wrapper:hover .overlay-text {
+    opacity: 0.7;
   }
 }
