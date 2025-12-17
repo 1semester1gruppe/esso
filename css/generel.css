@@ -13,7 +13,6 @@ img {
 .hero {
   position: relative;
   height: 50px;
-  overflow: hidden;
 }
 
 .hero-bg {
@@ -126,7 +125,7 @@ img {
     position: static;
     display: flex;
     flex-direction: row;
-    gap: 60px;
+    gap: 50px;
     background: none;
     padding: 0;
     margin-right: 20px;
