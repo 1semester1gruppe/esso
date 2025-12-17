@@ -92,7 +92,7 @@ img {
   font-size: 0.7rem;
   background: #f2ecdf;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: 40px;
   padding: 60px 10vw;
 }
@@ -137,6 +137,7 @@ img {
     gap: 40px;
     padding: 60px 10vw;
     font-size: 13px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .footer h4 {
